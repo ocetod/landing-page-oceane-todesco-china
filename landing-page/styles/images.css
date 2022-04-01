@@ -1,0 +1,20 @@
+
+.imageschina {
+	display: grid;
+	grid-template-columns: 1fr; 
+	grid-gap: 16px;
+	margin: center;
+	justify-items: center;
+}
+
+@media (min-width: 576px) {
+	.imageschina {
+	grid-template-columns: 1fr 1fr;
+	}	
+}
+
+@media (min-width: 768px) {
+.imageschina {
+	grid-template-columns: 1fr 1fr 1fr;
+		}	
+}

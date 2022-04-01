@@ -1,0 +1,29 @@
+
+.blockpart{
+	margin: 80px;
+	padding : 10px 100px;
+	border: 3px grey;
+	background-color: rgb(190, 190, 190);
+	box-shadow: 1px 1px 6px 2px #0000007d;
+	object-position: center;
+	position: center;
+
+
+}
+.block{
+display : grid;
+align-items: center;
+justify-content: space-between;
+}
+
+@media (min-width: 576px) {
+	.block {
+	grid-template-columns: 1fr 1fr;
+	}	
+}
+
+@media (min-width: 768px) {
+.block {
+	grid-template-columns: 1fr 1fr 1fr;
+		}	
+}

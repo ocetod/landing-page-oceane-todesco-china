@@ -1,0 +1,30 @@
+.banner{
+	height: 60vh;
+	background-image: url("../images/avion.jpg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display : flex;
+	flex-direction: column; 
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.banner h1, h2 {
+text-shadow: 1px 1px 1px black;
+}
+
+@media (min-width: 576px) {
+	.banner {
+	grid-template-columns: 1fr;
+	}	
+}
+
+.banner-fixed {
+	height: 60vh;
+	background-image: url("../images/avion.jpg");
+	margin: 48px 0;
+	background-size : cover;
+	background-attachment: fixed;
+}

@@ -1,0 +1,117 @@
+@import	url('banner.css');
+@import url('buttons.css');
+@import url('cards.css');
+@import url('block.css');
+@import url('images.css');
+@import url('footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+
+
+
+body{
+margin: center;
+background-image: url('https://st2.depositphotos.com/4196725/11735/i/950/depositphotos_117355478-stock-photo-cement-texture-background.jpg');
+}
+
+body{
+	color : black;
+	font-family: 'Exo', sans-serif;
+}
+h1 {
+	color: white;
+	font-size: xx-large;
+	text-align: center;
+	object-position: center;
+
+
+}
+
+h3{
+	text-decoration: underline;
+	color: black;
+	font-family: 'Caveat', sans-serif;
+	font-size: xx-large;
+}
+h4 {
+	color : white;
+}
+
+h5 {
+	color : black;
+	font-weight: 5px
+}
+
+a {
+text-decoration: none;
+}
+.button-blue {
+	background-color: rgb(048, 057, 049);
+	color: white;
+	padding : 15px;
+	border-radius: 6px;
+	font-weight: bold;
+	width: 25%;
+	margin: 15px auto;
+	display: block;
+	text-align: center;
+	border: 1px rgb(252, 168, 085);
+}
+
+.button-blue:hover {
+	background-color: grey;
+	transition: 1s;
+ }
+
+ .container {
+	width: 80%;
+	margin: 0 auto;
+ }
+
+.video {
+	display: grid;
+	grid-template-columns: 1fr;  
+	grid-gap: 16px;
+	align-items: center;
+}
+
+@media (min-width: 576px) {
+	.videos {
+	grid-template-columns: 1fr 1fr 1fr;
+	}	
+}
+
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
